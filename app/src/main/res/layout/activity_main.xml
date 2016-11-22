@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.amador.trabajoficheros.MainActivity">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/til"
+            >
+
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/edtUrlImages"
+                android:hint="Imagenes"
+                android:text="https://itishereapp.000webhostapp.com/imagenes.txt"
+                />
+
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/til"
+            android:id="@+id/til2"
+            >
+
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/edtUrlFrases"
+                android:hint="Frases"
+                android:text="https://itishereapp.000webhostapp.com/frases.txt"
+
+                />
+
+        </android.support.design.widget.TextInputLayout>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnDescargar"
+            android:text="Descargar"
+            android:layout_below="@+id/til2"
+            />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/imv"
+            android:layout_below="@+id/btnDescargar"
+            android:id="@+id/imv"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/imv"
+            android:id="@+id/txvFrases"
+            />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnDetener"
+            android:text="Detener"
+            android:layout_below="@+id/txvFrases"
+            android:visibility="gone"
+            />
+
+
+    </RelativeLayout>
+
+
+
+</ScrollView>
